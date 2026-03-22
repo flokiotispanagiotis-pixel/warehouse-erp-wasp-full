@@ -1,0 +1,14 @@
+app WarehouseERP {
+  title: "Warehouse ERP"
+  auth: {
+    userEntity: User,
+    methods: [EmailAndPassword]
+  }
+}
+
+route "/" -> page Dashboard
+route "/products" -> page Products
+route "/purchases" -> page Purchases
+route "/sales" -> page Sales
+route "/stock" -> page StockMovements
+route "/settings" -> page Settings
